@@ -1,0 +1,229 @@
+:root {
+   --primary-text-color: #757575;
+   --title-text-color: #212121;
+   --accent-color: #2196F3;
+   --primary-bg-color: #FFFFFF;
+   --header-logo-color: #000000;
+   --address-link-color: rgba(255, 255, 255, 0.6);
+   --hero-footer-bg-color: #2F303A;
+}
+
+body {
+   background-color: var(--primary-bg-color);
+   color: var(--primary-text-color);
+   font-family: Roboto, sans-serif;
+}
+.link {
+   text-decoration: none;
+}
+.link:hover, .link:focus {
+   color: var(--accent-color);
+}
+ul {
+   list-style: none;
+}
+/* Header */
+.header .link {
+   color: var(--header-logo-color) ;
+   font-family: Raleway, sans-serif;
+   font-weight: 700;
+   font-size: 26px;
+   line-height: 1.19;
+}
+.header .link:hover, .header .link:focus {
+   color: var(--accent-color);
+}
+
+.header .logo {
+   color: var(--accent-color);
+   font-family: Raleway, sans-serif;
+   font-weight: 700;
+   font-size: 26px;
+   line-height: 1.19;
+}
+.header .logo:hover, .header .logo:focus {
+   color: var(--accent-color);
+}
+
+.nav-style .link {
+   color: var(--title-text-color);
+   font-family: Roboto, sans-serif;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 1.14;
+}
+.nav-style .link:hover,
+.nav-style .link:focus {
+   color: var(--accent-color);
+}
+.nav-style .link.current {
+   color: var(--accent-color) ;
+}
+.contacts .link {
+   color: var(--primary-text-color);
+   font-family: Roboto, sans-serif;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 1.14;
+}
+.contacts .link:hover,
+.contacts .link:focus {
+   color: var(--accent-color);
+}
+
+/* hero */
+.hero {
+   background-color: var(--hero-footer-bg-color);
+}
+.hero-title {
+   color: var(--primary-bg-color) ;
+   font-style: normal;
+   font-weight: 900;
+   font-size: 44px;
+   line-height: 1.36;
+   text-align: center;
+   text-transform: uppercase;
+}
+/* section */
+.section-title {
+   color: var(--title-text-color);
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 1.17;
+   text-align: center;
+}
+/* feature */
+.feature-list .title {
+   color: var(--title-text-color);
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 1.14;
+   text-transform: uppercase;
+}
+.feature-list .text {
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 1.71;
+}
+
+/* team */
+.team-title {
+   color: var(--title-text-color);
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.19;
+}
+.team-text {
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.19;
+}
+
+/* button */
+.button {
+   color: var(--primary-bg-color);
+   background-color: var(--accent-color);
+   border: none;
+   cursor: pointer;
+   font-family: 'Roboto';
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 1.88;
+   text-align: center;        
+}
+
+.button:hover, .button:focus {
+   color: var(--accent-color);
+   background-color: var(--primary-bg-color);
+}
+
+.button-secondary {
+   text-decoration: none;
+   color: var(--title-text-color);
+   background-color: var(--primary-bg-color);
+   border: none;
+   cursor: pointer;
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.63;
+}
+
+.button-secondary:hover, .button-secondary:focus {
+   color: var(--primary-bg-color);
+   background-color: var(--accent-color);
+}
+
+/* footer */
+.footer {
+   background-color: var(--hero-footer-bg-color);
+}
+
+.footer .link {
+   color: var(--primary-bg-color) ;
+   font-family: Raleway, sans-serif;
+   font-weight: 700;
+   font-size: 26px;
+   line-height: 1.19;
+}
+
+.footer .link:hover,
+.footer .link:focus {
+   color: var(--accent-color);
+}
+
+.footer .logo {
+   color: var(--accent-color);
+   font-family: Raleway, sans-serif;
+   font-weight: 700;
+   font-size: 26px;
+   line-height: 1.19;
+}
+
+.footer .logo:hover,
+.footer .logo:focus {
+   color: var(--accent-color);
+}
+
+.address .text-link {
+   color: var(--primary-bg-color);
+   text-decoration: none;
+   font-family: Roboto, sans-serif;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 1.71;
+}
+
+.address .text-link:hover,
+.address .text-link:focus {
+   color: var(--accent-color);
+}
+
+.address .link {
+   color: var(--address-link-color);
+   font-family: Roboto, sans-serif;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 1.71;
+}
+
+.address .link:hover,
+.address .link:focus {
+   color: var(--accent-color);
+}
+
+/* Portfolio */
+.projects-title {
+   color: var(--title-text-color);
+   font-weight: 700;
+   font-size: 18px;
+   line-height: 2;
+}
+.projects-text {
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.88;
+}
