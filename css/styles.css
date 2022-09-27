@@ -1,4 +1,5 @@
 :root {
+   --primary-font: Roboto, sans-serif;
    --primary-text-color: #757575;
    --title-text-color: #212121;
    --accent-color: #2196F3;
@@ -8,40 +9,79 @@
    --hero-footer-bg-color: #2F303A;
 }
 
-body {
-   background-color: var(--primary-bg-color);
-   color: var(--primary-text-color);
-   font-family: Roboto, sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+   margin-top: 0;
+   margin-bottom: 0;
 }
+
+ul,
+ol {
+   margin-top: 0;
+   margin-bottom: 0;
+   padding-left: 0;
+}
+
+img {
+   display: block;
+}
+
+.list {
+   list-style: none;
+}
+
 .link {
    text-decoration: none;
 }
-.link:hover, .link:focus {
+
+.link:hover,
+.link:focus {
    color: var(--accent-color);
 }
-ul {
-   list-style: none;
+
+button {
+   cursor: pointer;
 }
+
+body {
+   background-color: var(--primary-bg-color);
+   color: var(--primary-text-color);
+   font-family: var(--primary-font)
+}
+
+.container {
+   width: 1200px;
+   margin-left: auto;
+   margin-right: auto;
+   padding-left: 15px;
+   padding-right: 15px;
+}
+
 /* Header */
-.header .link {
+.page-header .link {
    color: var(--header-logo-color) ;
    font-family: Raleway, sans-serif;
    font-weight: 700;
    font-size: 26px;
    line-height: 1.19;
 }
-.header .link:hover, .header .link:focus {
+.page-header .link:hover, .page-header .link:focus {
    color: var(--accent-color);
 }
 
-.header .logo {
+.page-header .logo {
    color: var(--accent-color);
    font-family: Raleway, sans-serif;
    font-weight: 700;
    font-size: 26px;
    line-height: 1.19;
 }
-.header .logo:hover, .header .logo:focus {
+.page-header .logo:hover, .page-header .logo:focus {
    color: var(--accent-color);
 }
 
@@ -84,29 +124,53 @@ ul {
    text-align: center;
    text-transform: uppercase;
 }
-/* section */
-.section-title {
-   color: var(--title-text-color);
+
+.button {
+   color: var(--primary-bg-color);
+   background-color: var(--accent-color);
+   border: none;
+   cursor: pointer;
+   font-family: 'Roboto';
    font-weight: 700;
-   font-size: 36px;
-   line-height: 1.17;
+   font-size: 16px;
+   line-height: 1.88;
    text-align: center;
 }
+
+.button:hover,
+.button:focus {
+   color: var(--accent-color);
+   background-color: var(--primary-bg-color);
+}
+
 /* feature */
-.feature-list .title {
+.feature-title {
    color: var(--title-text-color);
    font-weight: 700;
    font-size: 14px;
    line-height: 1.14;
-   text-transform: uppercase;
 }
-.feature-list .text {
+.feature-text {
    font-weight: 400;
    font-size: 14px;
    line-height: 1.71;
 }
 
+/* example */
+.example-section-title {
+   color: var(--title-text-color);
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 1.17;
+}
+
 /* team */
+.team-section-title {
+   color: var(--title-text-color) ;
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 1.17;
+}
 .team-title {
    color: var(--title-text-color);
    font-weight: 500;
@@ -119,48 +183,12 @@ ul {
    line-height: 1.19;
 }
 
-/* button */
-.button {
-   color: var(--primary-bg-color);
-   background-color: var(--accent-color);
-   border: none;
-   cursor: pointer;
-   font-family: 'Roboto';
-   font-weight: 700;
-   font-size: 16px;
-   line-height: 1.88;
-   text-align: center;        
-}
-
-.button:hover, .button:focus {
-   color: var(--accent-color);
-   background-color: var(--primary-bg-color);
-}
-
-.button-secondary {
-   text-decoration: none;
-   color: var(--title-text-color);
-   background-color: var(--primary-bg-color);
-   border: none;
-   cursor: pointer;
-   font-family: 'Roboto';
-   font-style: normal;
-   font-weight: 500;
-   font-size: 16px;
-   line-height: 1.63;
-}
-
-.button-secondary:hover, .button-secondary:focus {
-   color: var(--primary-bg-color);
-   background-color: var(--accent-color);
-}
-
 /* footer */
-.footer {
+.page-footer {
    background-color: var(--hero-footer-bg-color);
 }
 
-.footer .link {
+.page-footer .link {
    color: var(--primary-bg-color) ;
    font-family: Raleway, sans-serif;
    font-weight: 700;
@@ -168,12 +196,12 @@ ul {
    line-height: 1.19;
 }
 
-.footer .link:hover,
-.footer .link:focus {
+.page-footer .link:hover,
+.page-footer .link:focus {
    color: var(--accent-color);
 }
 
-.footer .logo {
+.page-footer .logo {
    color: var(--accent-color);
    font-family: Raleway, sans-serif;
    font-weight: 700;
@@ -181,8 +209,8 @@ ul {
    line-height: 1.19;
 }
 
-.footer .logo:hover,
-.footer .logo:focus {
+.page-footer .logo:hover,
+.page-footer .logo:focus {
    color: var(--accent-color);
 }
 
@@ -226,4 +254,22 @@ ul {
    font-weight: 400;
    font-size: 16px;
    line-height: 1.88;
+}
+.button-secondary {
+   text-decoration: none;
+   color: var(--title-text-color);
+   background-color: var(--primary-bg-color);
+   border: none;
+   cursor: pointer;
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.63;
+}
+
+.button-secondary:hover,
+.button-secondary:focus {
+   color: var(--primary-bg-color);
+   background-color: var(--accent-color);
 }
