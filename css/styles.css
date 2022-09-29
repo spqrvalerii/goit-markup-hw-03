@@ -283,6 +283,7 @@ body {
    flex-basis: calc((100% - 3 * 30px) / 4);
 }
 .team-card-wrapper {
+   background-color: var(--primary-bg-color);
    padding-top: 30px;
    padding-bottom: 30px;
    text-align: center;
