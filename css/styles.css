@@ -250,6 +250,10 @@ body {
 }
 
 /* =======================team===================== */
+.team {
+   background-color: var(--secondary-button-bg-color) ;
+}
+
 .team-section-title {
    color: var(--title-text-color) ;
    font-weight: 700;
@@ -367,6 +371,7 @@ body {
    text-decoration: none;
    color: var(--title-text-color);
    background-color: var(--secondary-button-bg-color);
+   min-width: 73px;
    border: none;
    cursor: pointer;
    font-family: 'Roboto';
